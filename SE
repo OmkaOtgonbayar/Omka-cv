@@ -1,0 +1,29 @@
+        <?php elseif ($pageFlag === 1): ?>
+            <h2>confirm</h2>
+            <dl>
+                <dt>name</dt>
+                <dd><?= htmlspecialchars($postValue["name"] ?? "", ENT_QUOTES, 'UTF-8') ?></dd>
+                <dt>message</dt>
+                <dd><?= nl2br(htmlspecialchars($postValue["message"] ?? "", ENT_QUOTES, 'UTF-8')) ?></dd>
+                <dt>email</dt>
+                <dd><?= htmlspecialchars($postValue["email"] ?? "", ENT_QUOTES, 'UTF-8') ?></dd>
+                <dt>gender</dt>
+                <dd><?= htmlspecialchars($postValue["gender"] ?? "", ENT_QUOTES, 'UTF-8') ?></dd>
+            </dl>
+            <div id="buttonArea">
+                <button type="submit" name="backBtn" id="backBtn" value="back">back</button>
+                <button type="submit" name="sendBtn" id="sendBtn" value="send">send</button>
+            </div>
+
+        <?php elseif ($pageFlag === 2): ?>
+            <h2>complete</h2>
+            <p>I get the message. thank you </p>
+
+        <?php elseif ($pageFlag === 3): ?>
+            <h2>error</h2>
+            <p>Access denied</p>
+        <?php endif; ?>
+    </form>
+</main>
+</body>
+</html>
