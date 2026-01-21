@@ -14,7 +14,7 @@
 
 🗾 Language  
 - Japanese: JLPT N2 (N1 in progress)  
-  → Can communicate in daily and work-related conversations  
+  → Can communicate in daily and work-related conversations in englsih 
   → Continuously studying to reach business-level fluency  
 
 🚗 License  
