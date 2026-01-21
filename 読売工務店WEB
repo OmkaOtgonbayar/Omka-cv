@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>読売工務店｜新築・リフォーム・施工事例</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <div class="logo"><a href="index.html">読売工務店</a></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a class="is-active" href="index.html">ホーム</a></li>
+        <li><a href="new-house.html">新築</a></li>
+        <li><a href="reform.html">リフォーム</a></li>
+        <li><a href="works.html">施工事例</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="staff.html">スタッフ</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a class="cta" href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-strip">
+      <div class="hero-slide" style="background-image:url('assets/img/hero-1.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-2.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-3.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-4.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-1.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-2.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-3.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/img/hero-4.jpg')"></div>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-title">読売工務店</div>
+    <div class="hero-sub">新築・リフォーム・施工事例｜安心と品質の住まいづくり</div>
+    <div class="hero-actions">
+      <a class="btn primary" href="contact.html">相談する</a>
+      <a class="btn ghost" href="works.html">施工事例を見る</a>
+      <a class="btn ghost" href="access.html">アクセス</a>
+    </div>
+  </div>
+</section>
+
+<main class="page">
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <div class="section-title">サービス</div>
+        <div class="section-desc">新築・リフォーム・設計施工管理まで一括対応</div>
+      </div>
+    </div>
+
+    <div class="grid3">
+      <div class="feature">
+        <div class="badge">新</div>
+        <h3>新築</h3>
+        <p>住み心地・耐震・素材にこだわり、最適な設計をご提案します。</p>
+        <div style="margin-top:12px"><a class="btn dark block" href="new-house.html">新築について</a></div>
+      </div>
+      <div class="feature">
+        <div class="badge">改</div>
+        <h3>リフォーム</h3>
+        <p>生活の「不便」を解決し、今の暮らしにフィットさせます。</p>
+        <div style="margin-top:12px"><a class="btn dark block" href="reform.html">リフォームを見る</a></div>
+      </div>
+      <div class="feature">
+        <div class="badge">例</div>
+        <h3>施工事例</h3>
+        <p>写真サムネイルを並べ、クリックで詳細・拡大表示できます。</p>
+        <div style="margin-top:12px"><a class="btn dark block" href="works.html">施工事例へ</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <div class="section-title">新着情報</div>
+        <div class="section-desc">お知らせの一覧と詳細ページ</div>
+      </div>
+      <a href="news.html" class="btn dark">一覧へ</a>
+    </div>
+
+    <div class="news-list">
+      <a class="news-item" href="article.html">
+        <div class="news-date">2019.07.12</div>
+        <div class="news-title">山田邸を竣工致しました。</div>
+      </a>
+      <div class="news-item">
+        <div class="news-date">2019.06.04</div>
+        <div class="news-title">テキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2019.05.28</div>
+        <div class="news-title">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div>© 2025 読売工務店</div>
+    <div>〒108-0014 東京都港区芝5-26-16 / TEL 03-3455-0221</div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
+
+// AND CSS //
+
+/* =========================
+   Base / Tokens
+========================= */
+:root{
+  --bg:#f4f6f9;
+  --text:#222;
+  --muted:#666;
+
+  --primary:#c89a4b;
+  --primary-soft:#e3c9a4;
+
+  --navy:#1d3557;
+  --danger:#e63946;
+
+  --surface:#fff;
+  --soft:#efe4d5;
+
+  --radius-sm:12px;
+  --radius-md:16px;
+  --radius-lg:18px;
+  --radius-pill:999px;
+
+  --shadow-sm:0 12px 34px rgba(0,0,0,.08);
+  --shadow-md:0 14px 44px rgba(0,0,0,.12);
+  --shadow-lg:0 18px 55px rgba(0,0,0,.14);
+
+  --container:1100px;
+  --pad:16px;
+
+  --t:.2s;
+}
+
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Meiryo","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Container */
+.page{max-width:var(--container);margin:0 auto;padding:0 var(--pad) 80px}
+
+/* =========================
+   Utilities (reuse)
+========================= */
+.surface{
+  background:var(--surface);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-sm);
+}
+.surface-soft{
+  background:var(--soft);
+  border-radius:var(--radius-lg);
+}
+.shadow-md{box-shadow:var(--shadow-md)}
+.shadow-lg{box-shadow:var(--shadow-lg)}
+.round-lg{border-radius:var(--radius-lg)}
+.round-md{border-radius:var(--radius-md)}
+.round-pill{border-radius:var(--radius-pill)}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:translateY(0)}
+
+/* =========================
+   Header / Nav
+========================= */
+.site-header{
+  background:var(--surface);
+  border-bottom:4px solid var(--primary-soft);
+  position:sticky;top:0;z-index:100;
+}
+.site-header .inner{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:14px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;
+}
+.logo a{
+  font-size:1.6rem;
+  font-weight:900;
+  letter-spacing:.12em;
+  color:var(--primary);
+}
+.main-nav ul{
+  list-style:none;
+  display:flex;flex-wrap:wrap;
+  gap:10px;
+  justify-content:flex-end;
+}
+.main-nav a{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:8px 12px;
+  border-radius:var(--radius-pill);
+  font-weight:800;
+  font-size:.92rem;
+  transition:transform var(--t),background var(--t),opacity var(--t);
+}
+.main-nav a:hover{background:#f1efe8;transform:translateY(-1px)}
+.main-nav a.is-active{background:var(--primary-soft)}
+.main-nav a.cta{background:var(--primary);color:#fff}
+.main-nav a.cta:hover{opacity:.92}
+
+/* =========================
+   Hero
+========================= */
+.hero{
+  position:relative;
+  height:760px;
+  overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+.hero::before{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.14));
+  z-index:1;
+}
+.hero-bg{position:absolute;inset:0}
+.hero-strip{height:100%;display:flex;animation:heroScroll 44s linear infinite}
+.hero-slide{
+  min-width:100%;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  transform:scale(1.03);
+}
+@keyframes heroScroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-400%)}
+}
+.hero-inner{
+  position:relative;z-index:2;
+  max-width:980px;
+  padding:70px 16px 0;
+}
+.hero-title{
+  font-size:96px;
+  font-weight:500;
+  letter-spacing:.18em;
+  line-height:1.1;
+  margin-bottom:16px;
+  text-shadow:0 14px 40px rgba(0,0,0,.35);
+}
+.hero-sub{font-size:22px;opacity:.95;margin-bottom:26px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:var(--radius-pill);
+  padding:14px 30px;
+  font-weight:900;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:transform var(--t),box-shadow var(--t),filter var(--t),background var(--t),opacity var(--t);
+}
+.btn.primary{
+  background:#fff;color:var(--text);
+  box-shadow:0 14px 44px rgba(0,0,0,.22);
+}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 18px 55px rgba(0,0,0,.30)}
+.btn.dark{background:var(--navy);color:#fff}
+.btn.dark:hover{filter:brightness(.96);transform:translateY(-2px)}
+.btn.ghost{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.18)}
+.btn.block{width:100%}
+
+/* =========================
+   Sections / Titles
+========================= */
+.section{margin-top:60px}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:14px;
+  margin-bottom:16px;
+}
+.section-title{
+  font-size:28px;
+  color:var(--navy);
+  padding-left:14px;
+  border-left:6px solid var(--danger);
+}
+.section-desc{color:var(--muted);font-size:14px}
+
+/* Common blocks mapped to your old classes */
+.card{background:var(--surface);border-radius:var(--radius-lg);padding:18px;box-shadow:var(--shadow-sm)}
+.soft{background:var(--soft);border-radius:var(--radius-lg);padding:26px}
+
+/* =========================
+   Grids / Responsive
+========================= */
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+
+@media (max-width:980px){
+  .hero{height:520px}
+  .hero-title{font-size:46px;letter-spacing:.12em}
+  .hero-sub{font-size:16px}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .section-head{flex-direction:column;align-items:flex-start}
+}
+
+/* =========================
+   Features
+========================= */
+.feature{
+  background:var(--surface);
+  border-radius:var(--radius-lg);
+  padding:16px;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s;
+}
+.feature:hover{transform:translateY(-6px);box-shadow:0 18px 55px rgba(0,0,0,.12)}
+.badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:36px;height:36px;
+  border-radius:12px;
+  background:var(--primary);
+  color:#fff;
+  font-weight:900;
+  margin-bottom:10px;
+}
+.feature h3{font-size:18px;margin-bottom:6px}
+.feature p{color:#555;font-size:14px}
+
+/* =========================
+   Media / Article
+========================= */
+.media{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md)}
+.media.ratio169{aspect-ratio:16/9}
+.media.ratio43{aspect-ratio:4/3}
+
+.article h2{font-size:18px;color:var(--navy);margin:16px 0 8px}
+.article p{color:#444}
+.kv{border-radius:var(--radius-lg);overflow:hidden;margin:14px 0;aspect-ratio:16/9;background:#ddd}
+
+.list{padding-left:18px;color:#444}
+.hr{height:1px;background:#e7e7e7;margin:14px 0}
+
+/* Definition list */
+.dl{display:grid;gap:10px;margin-top:10px}
+.dl .row{display:grid;grid-template-columns:96px 1fr;gap:10px}
+.dl dt{font-weight:900;color:var(--navy)}
+.dl dd{color:#444}
+
+/* =========================
+   News
+========================= */
+.news-list{display:grid;gap:10px}
+.news-item{
+  background:var(--surface);
+  border-radius:var(--radius-lg);
+  padding:14px;
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:12px;
+  align-items:center;
+  box-shadow:var(--shadow-sm);
+  transition:transform var(--t),box-shadow var(--t);
+}
+.news-item:hover{transform:translateY(-3px);box-shadow:0 18px 55px rgba(0,0,0,.12)}
+.news-date{font-weight:900;color:var(--navy)}
+.news-title{font-weight:900;color:var(--text)}
+
+/* =========================
+   Map
+========================= */
+.map{
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  aspect-ratio:4/3;
+  box-shadow:var(--shadow-md);
+  background:#ddd;
+}
+.map iframe{width:100%;height:100%;border:0}
+.note{color:var(--muted);font-size:14px;margin-top:10px}
+
+/* =========================
+   Forms
+========================= */
+.form{display:grid;gap:12px}
+.field{display:grid;gap:6px}
+.field label{font-weight:900;color:var(--navy)}
+.req{
+  display:inline-block;
+  margin-left:8px;
+  font-size:12px;
+  font-weight:900;
+  padding:2px 8px;
+  border-radius:var(--radius-pill);
+  background:var(--danger);
+  color:#fff;
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #d6dbe3;
+  border-radius:var(--radius-sm);
+  font:inherit;
+  outline:none;
+  transition:border-color var(--t),box-shadow var(--t);
+}
+textarea{min-height:150px;resize:vertical}
+input:focus,textarea:focus{
+  border-color:var(--primary);
+  box-shadow:0 0 0 4px rgba(200,154,75,.18);
+}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+
+/* =========================
+   FAQ
+========================= */
+.faq{display:grid;gap:12px}
+.faq details{
+  background:var(--surface);
+  border-radius:var(--radius-lg);
+  padding:14px;
+  box-shadow:var(--shadow-sm);
+}
+.faq summary{cursor:pointer;font-weight:900;color:var(--navy)}
+.faq .a{margin-top:8px;color:#444}
+
+/* =========================
+   Staff
+========================= */
+.staff{
+  background:var(--surface);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s;
+}
+.staff:hover{transform:translateY(-6px);box-shadow:0 18px 55px rgba(0,0,0,.12)}
+.staff .ph{aspect-ratio:4/3;background:#ddd}
+.staff .bd{padding:14px}
+.staff .name{font-weight:900;color:var(--navy);margin-bottom:4px}
+.staff .role{
+  display:inline-block;
+  font-size:12px;
+  font-weight:900;
+  padding:4px 10px;
+  border-radius:var(--radius-pill);
+  background:var(--soft);
+  color:#6b4d2a;
+  margin-bottom:10px;
+}
+.staff .bio{color:#444;font-size:13px}
+
+/* =========================
+   Flow / Steps
+========================= */
+.flow{display:grid;gap:12px}
+.step{
+  background:var(--surface);
+  border-radius:var(--radius-lg);
+  padding:14px;
+  box-shadow:var(--shadow-sm);
+  display:grid;
+  grid-template-columns:52px 1fr;
+  gap:12px;
+}
+.step .no{
+  width:52px;height:52px;
+  border-radius:14px;
+  background:var(--primary);
+  color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;
+}
+.step h3{color:var(--navy);font-size:16px;margin-bottom:6px}
+.step p{color:#444;font-size:14px}
+
+/* =========================
+   Works / Gallery
+========================= */
+.work-hero{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.work-hero .main{
+  aspect-ratio:4/3;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-md);
+}
+.work-hero .side{display:grid;gap:12px}
+.work-hero .side .sub{
+  aspect-ratio:4/3;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-md);
+  cursor:pointer;
+}
+.work-info{display:grid;grid-template-columns:1fr 1.4fr;gap:16px;margin-top:16px}
+@media (max-width:980px){
+  .work-hero{grid-template-columns:1fr}
+  .work-info{grid-template-columns:1fr}
+}
+.thumbs a{
+  display:block;
+  aspect-ratio:4/3;
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  box-shadow:var(--shadow-md);
+  transition:transform var(--t),box-shadow var(--t);
+}
+.thumbs a:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+
+/* =========================
+   Lightbox
+========================= */
+.lightbox{
+  position:fixed;inset:0;
+  background:rgba(0,0,0,.78);
+  display:none;
+  align-items:center;justify-content:center;
+  padding:20px;
+  z-index:9999;
+}
+.lightbox.open{display:flex}
+.lightbox .box{
+  max-width:1100px;width:100%;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  background:#111;
+  box-shadow:0 20px 70px rgba(0,0,0,.35);
+}
+.lightbox .bar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 12px;
+  color:#fff;
+  background:#111;
+}
+.lightbox .bar span{font-weight:900}
+.lightbox .bar button{
+  border:1px solid rgba(255,255,255,.28);
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  border-radius:var(--radius-pill);
+  padding:8px 14px;
+  font-weight:900;
+  cursor:pointer;
+}
+.lightbox img{width:100%;height:auto;object-fit:contain}
+
+/* =========================
+   Footer
+========================= */
+.site-footer{
+  background:var(--navy);
+  color:#f1faee;
+  padding:22px 0;
+  margin-top:70px;
+}
+.site-footer .inner{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 var(--pad);
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  font-size:14px;
+}
